@@ -7,6 +7,9 @@ Description: Medicle Template
 Version: 1.0.0
 
 */
+* {
+  box-sizing: border-box;
+}
 @import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
 html {
   overflow-x: hidden;
@@ -228,7 +231,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   background-image: linear-gradient(145deg, rgba(19, 177, 205, 0.95) 0%, rgba(152, 119, 234, 0.95) 100%);
   background-repeat: repeat-x;
 }
-
+.big-banner {
+  background: #223a66;
+}
 .section {
   padding: 100px 0;
 }
@@ -461,11 +466,13 @@ a:focus {
 }
 
 .bg-1 {
-  background: url("../images/bg/22.jpg") no-repeat 50% 50%;
+  background: url("../images/hsb-images/wdd-15.jpg") no-repeat 50% 50%;
   background-size: cover;
   position: relative;
 }
-
+.bg-back {
+  background-color:#e5e2e2e1;
+}
 .bg-service {
   background: url("../images/hsb-images/wdd-15.jpg") no-repeat 50% 50%;
   background-size: cover;
@@ -553,6 +560,14 @@ a:focus {
   border-radius: 5px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
 }
+.about-card {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  transition:.5s ease-in;
+ 
+}
+.about-card:hover {
+ transform: scale(1.1);
+}
 
 .award-img {
   height: 120px;
@@ -601,6 +616,11 @@ a:focus {
 
 .appoinment-form textarea.form-control {
   height: auto;
+}
+.clients-logo{
+  border:3px inset black;
+  border-right:7px outset black;
+  border-left:7px outset black;
 }
 
 .client-thumb {
@@ -680,8 +700,14 @@ a:focus {
 
 .service .service-item {
   background: #fff;
-  padding: 30px;
+  padding: px;
   border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  transition:.5s ease;
+}
+
+.service .service-item:hover {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 .service .icon {
@@ -1435,14 +1461,25 @@ a:focus {
 }
 
 .footer-btm {
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 1px solid #fff;
   
+}
+.text-capitalize {
+  color:#fff!important;
+}
+
+.text-hsb {
+  color:red;
+}
+
+.hsb-support {
+  color: rgb(70, 197, 255)!important;
 }
 
 .footer-socials li a {
   width: 45px;
   height: 45px;
-  background: #6F8BA4;
+  background: #3498f0;
   color: #fff;
   display: inline-block;
   text-align: center;
